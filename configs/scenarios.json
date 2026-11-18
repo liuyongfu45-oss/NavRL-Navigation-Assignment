@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "course": "Deep Reinforcement Learning for Autonomous Robot Navigation (NavRL)",
+    "student_name": "LIU YONGFU",
+    "student_id": "20263321",
+    "date": "2026-11-18"
+  },
+  "world": {
+    "size": 36.0,
+    "half": 18.0,
+    "dt": 0.1,
+    "max_steps": 300
+  },
+  "robot": {
+    "radius": 0.35,
+    "v_lim": 2.0,
+    "omega_lim": 1.5,
+    "arrive_radius": 0.4,
+    "safe_distance": 1.2,
+    "influence_radius": 4.0
+  },
+  "observation": {
+    "n_rays": 36,
+    "ray_bins": 4,
+    "n_nearest_dynamic": 5,
+    "dynamic_features": 10
+  },
+  "reward": {
+    "goal_bonus": 10.0,
+    "collision_penalty": -10.0,
+    "timeout_penalty": -10.0,
+    "progress_weight": 1.0,
+    "static_safe_reward": 0.15,
+    "static_close_penalty": 0.6,
+    "dynamic_safe_reward": 0.15,
+    "dynamic_close_penalty": 0.6,
+    "smoothness_penalty": 0.05,
+    "stall_penalty": 0.10,
+    "stall_speed": 0.05
+  },
+  "scenarios": {
+    "S1_dynamic": {
+      "title": "S1 - Dynamic obstacles",
+      "video": "NavRL_S1_Dynamic.mp4",
+      "robots": 3,
+      "static_obstacles": 0,
+      "dynamic_obstacles": 14,
+      "obstacle_radius": 0.55,
+      "obstacle_speed": 0.9,
+      "starts": [[-16.0, -13.0], [-13.0, 11.0], [13.0, -11.0]],
+      "goals": [[12.5, 12.0], [-11.0, 9.5], [11.5, -13.0]]
+    },
+    "S2_static": {
+      "title": "S2 - Static obstacles",
+      "video": "NavRL_S2_Static.mp4",
+      "robots": 3,
+      "static_obstacles": 12,
+      "dynamic_obstacles": 0,
+      "obstacle_radius": 0.70,
+      "obstacle_speed": 0.0,
+      "starts": [[-16.0, -13.0], [-13.0, 11.0], [13.0, -11.0]],
+      "goals": [[12.5, 12.0], [-11.0, 9.5], [11.5, -13.0]]
+    },
+    "S3_mixed": {
+      "title": "S3 - Mixed static + dynamic obstacles",
+      "video": "NavRL_S3_Mixed.mp4",
+      "robots": 3,
+      "static_obstacles": 7,
+      "dynamic_obstacles": 8,
+      "obstacle_radius": 0.60,
+      "obstacle_speed": 0.8,
+      "starts": [[-16.0, -13.0], [-13.0, 11.0], [13.0, -11.0]],
+      "goals": [[12.5, 12.0], [-11.0, 9.5], [11.5, -13.0]]
+    },
+    "assignment_multi_robot": {
+      "title": "Assignment variant: 6 robots, 15 obstacles (mixed)",
+      "video": null,
+      "robots": 6,
+      "static_obstacles": 8,
+      "dynamic_obstacles": 7,
+      "obstacle_radius": 0.60,
+      "obstacle_speed": 0.85,
+      "starts": null,
+      "goals": null
+    }
+  }
+}

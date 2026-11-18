@@ -1,0 +1,7 @@
+# Core dependencies (environment, metrics, evaluation, baseline policy)
+numpy>=1.24
+matplotlib>=3.5
+
+# Optional: required only for PPO training and the neural-network tests.
+# The environment, reward, metrics and APF baseline run without PyTorch.
+torch>=2.0

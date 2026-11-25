@@ -6,6 +6,20 @@ obstacles and other robots. This repository contains the simulation package, the
 reward design, the actor–critic neural network, the evaluation metrics, the test
 suite and the generated result tables and figures.
 
+## Demonstration videos
+
+**S1 — Dynamic obstacles**
+
+https://github.com/user-attachments/assets/ce9fa014-11a0-495e-a97c-c7d62fb08013
+
+**S2 — Static obstacles**
+
+https://github.com/user-attachments/assets/d104350e-fd30-48d0-a2ca-e94eb2f5b762
+
+**S3 — Mixed static + dynamic**
+
+https://github.com/user-attachments/assets/08e59ef2-8121-4927-a02f-97e70607d9ce
+
 | Item | Value |
 |---|---|
 | Course | Deep Reinforcement Learning for Autonomous Robot Navigation (NavRL) |
